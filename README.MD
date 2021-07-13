@@ -27,7 +27,7 @@
 ## OOP Main rules:
 1. Abstraction
 2. Inheritance
-3. Polymorphism
+3. Polymorphism  # modyfikacja rodzica
 4. Encapsulation
 
 
