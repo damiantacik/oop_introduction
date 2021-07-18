@@ -75,6 +75,6 @@ def propagator(name, propagate):
 #     raise TypeError('Cannot convert lead into gold')
 
 
-f = open(os.path.join('..', 'readme.md'), 'r')
+f = open(os.path.join('../README.MD'), 'r')
 with f as g:
     print(f is g)

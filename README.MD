@@ -34,6 +34,39 @@
 ## Inheritance
 - copy all fields and methods from parent class
 
+
+# Getters and Setters
+- invoked automatically
+- getter and setter name's can not be the same as field's name because it will be 'maximum recursion depth exceeded'
+
+## Getter
+- invoked by the decorator @property
+- enable possibility to get a specific field
+- secured against looping by using: self._temp instead self.temp
+- has the same name as the setter
+- application: data formatting from number to string with Celsius
+
+## Setter
+- invoked by the decorator @<getter_object_name>.setter
+- set a new value for specific field
+- have to use: _self._temp_c ?
+- application: data validation
+- invoked automatically when a value is assigned to a specific field
+
+
+### Static Method
+- can not has self. 
+- has no idea about an object ( do not need it)
+- use only when we have a class and we want the class to have functionality
+- not use an object or class, but we want to have it whole in one place
+- invoked by decorator @staticmethod from class, object and function level
+
+### Class Method
+- takes 'cls' as parameter as class
+- all fields and objects of the class can be dynamically modified in runtime
+- invoked by decorator @classmethod from class and object level
+
+
 # Context Manager (Protocol) (PEP 343)
 
 ```python
